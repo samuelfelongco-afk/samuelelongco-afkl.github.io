@@ -1,0 +1,87 @@
+/* itera.css - Styles for Group 4 Info Page */
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(to bottom right, #e7f0ff, #cfdfff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container{
+  height: auto;
+  width: auto;
+  margin:auto
+  padding auto;
+
+  
+}
+.profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  flex-shrink: 0; 
+}
+
+.info {
+  flex: 1;
+  line-height: 1.4;
+}
+
+h1 {
+  text-align: center;
+  color: #004aad;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #666;
+}
+
+.member {
+  display: flex;
+  align-items: center;
+  background: #f6f9ff;
+  border: 1px solid #d0e0ff;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.member:hover {
+  background: #e9f1ff;
+  transform: scale(1.02);
+}
+
+.profile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #004aad;
+  object-fit: cover;
+}
+
+.member h2 {
+  margin: 0;
+  color: #004aad;
+  font-size: 20px;
+}
+
+.info {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-left: 50px;
+  transition: all 0.4s ease;
+}
+
+.member.active .info {
+  max-height: 120px;
+  opacity: 1;
+  margin-top: 10px;
+}
