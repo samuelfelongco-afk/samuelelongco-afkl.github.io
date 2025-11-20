@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>It Era</title>
+<link rel="stylesheet" href="it.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Group 4 Basic Information</h1>
+    <p class="subtitle">Click on a member’s name to see their basic information.</p>
+
+    <div class="member" onclick="toggleInfo(this)">
+      <img src="sam.jpg" alt="Samuel Felongco" class="profile">
+      <h2>Samuel Felongco</h2>
+      <div class="info">
+        <p><strong>fun fact:</strong> 3 ang favorite number sa electric fan </p>
+          <p><strong>Motto:</strong> kung kaya nila, idol ko sila</p>
+      <p><strong>Hobbies:</strong> matulog ng nakapikit </p>
+   
+    </div>
+    </div>
+
+    <div class="member" onclick="toggleInfo(this)">
+      <img src="jud.jpeg" alt="Judy Ann Flores" class="profile">
+      <h2>Judy Ann Flores</h2>
+      <div class="info">
+        <p><strong>Fun fact:</strong> pag binaliktad mo ng basa ang "RACECAR", ay RACECAR parin </p>
+        <p><strong>motto:</strong> "Good things comes to those who wait" </p>
+        <p><strong>hobbies:</strong> I do listening to music sometimes, studying, langguage learning, screentime, communicating with my online friends, and drawing. </p>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleInfo(this)">
+      <img src="kar.jpeg" alt="Karyll Ann Escorpeso" class="profile">
+      <h2>Karyll Ann Escorpeso</h2>
+      <div class="info">
+        <p><strong>Fun fact:</strong> Natatae pagkatapos kumain</p>
+        <p><strong>motto:</strong> "If that's the case, pencil case "</p>
+        <p><strong>Hobbies:</strong> Running from the past, and chasing the future </p>
+      </div>
+    </div>
+
+    <div class="member" onclick="toggleInfo(this)">
+      <img src="jane.jpg" alt="Jane Escliba" class="profile">
+      <h2>Jane Escliba</h2>
+      <div class="info">
+        <p><strong>Fun fact:</strong> Pm po</p>
+        <p><strong>Motto:</strong> "it's not hard, it's just new"</p>
+        <p><strong>Hobbies:</strong> Wattpad </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Show/hide info when a name is clicked
+    function toggleInfo(selected) {
+      const members=document.querySelectorAll('.member');
+      members.forEach(member => {
+        if(member!==selected){
+          member.classList.remove('active');
+        }
+      });
+      selected.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
